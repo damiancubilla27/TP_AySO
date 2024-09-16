@@ -1,0 +1,78 @@
+ls -l
+ls -la $HOME
+ls -la /home/vagrant/
+ls -la /home/vagrant/.ssh/
+ssh
+ssh-key --help
+ssh-keygen 
+ssh
+ssh-keygen --help
+ssh-keygen -t ed25519
+ls -la /home/vagrant/.ssh/
+cat /home/vagrant/.ssh/id_ed25519.pub
+ll
+git clone git@github.com:damiancubilla27/TP_AySO.git
+ll
+cd repogit/
+ll
+git clone git@github.com:damiancubilla27/TP_AySO.git
+ll
+cd
+ll
+rm -r TP_AySO/
+ll
+rm -rf TP_AySO
+ll
+cd repogit/
+git status
+ll
+cd TP_AySO/
+git status
+touch un_archivo
+ll
+git status
+git add .
+git status
+git commit -m "add: primer commit de prueba"
+git config --global user.email "damiancubilla27@gmail.com"
+git config --global user.name "damiancubilla27"
+git commit -m "add: primer commit de prueba"
+git status
+git push
+pwd
+ls -l
+cat /etc/os-release 
+man grep
+grep -i home_url /etc/os-release 
+whoami -un
+whoami
+id -un
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git status
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt 
+git status
+git add datos_usuario.txt 
+git commit -m "feat: Añadiendo informacion de CPU"
+git status
+grep -v "nologin" /etc/passwd | head -n10 | sort -t: -k7 > lista_ordenada
+git add lista_ordenada 
+git commit -m "ADD: Lista de usuarios ordenada"
+git status
+echo "tcpdump" > comando_dump_net
+echo "Para buscar este comando se utilizo 'man tcpdump' " >> comando_dump_net 
+git add comando_dump_net 
+git commit -m "ADD: Comando para Capturar y analizar el trafico de red"
+git status
+cat << EOF >> README.md
+Alumno : Cubilla Damian
+Division : C313
+Turno : Noche
+EOF
+
+git add README.md 
+git commit -m "docs: Informacion de alumno, division y turno"
+git status
+history -a
